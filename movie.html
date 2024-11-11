@@ -1,0 +1,39 @@
+<!--Part 1 UI-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Streaming Platfrom</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Movie List</h1>
+        <div id="movieList" class="movie-list"></div>
+    </div>
+    <div id="movieModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times</span>
+            <h2 id="movieTitle"></h2>
+            <p><strong>Director:</strong><span id="movieDirector"></span></p>
+            <p><strong>Cast:</strong><span id="movieCast"></span></p>
+            <p><strong>Duration:</strong><span id="movieDuration"></span></p>
+            <p><strong>Release Date:</strong><span id="movieReleaseDate"></span></p>
+            <p><strong>Rating:</strong><span id="movieRating"></span></p>
+            <p><strong>Tags:</strong><span id="movieTags"></span></p>
+        </div>
+    </div>
+    <script>src="script.js"</script>
+</body>
+</html>
+<!-- Part-2 Searching and Filtering-->
+ <div>
+    <input type="text" id="searchInput" placeholder="Search movies..." oninput="filterMovies()">
+    <select id="genreFilter" onchange="filterMovies()">
+        <option value="">All Genres</option>
+        <option value="">Action</option>
+        <option value="">Adventure</option>
+        <option value="">Comedy</option>
+    </select>
+ </div>
